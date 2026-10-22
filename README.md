@@ -1,6 +1,6 @@
 # WLCBC & LCBC — core algorithms
 
-Four original core Python files, copied unchanged from the supplied `Core Algorithm Code in LCBC` directory. Archived variants, separate experiment scripts, plots, and system files are excluded. Original filenames, comments, and embedded examples are preserved.
+Four original core Python files, selected from the supplied `Core Algorithm Code in LCBC` directory, with a README and dependency list. Archived variants, separate experiment scripts, plots, and system files are excluded. Algorithm text, original filenames, comments, and embedded examples are preserved. GitHub's web editor normalized the Python sources' CRLF line endings to LF; the downloadable local source package retains the original line endings.
 
 | Source | Implementation | Main entry points |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ The OTA solver's command-line interface accepts `--device cpu` and `--no-plot`; 
 
 ## Scope and verification
 
-**Certified package integrity:** each copied source matches its supplied original byte for byte, and each file was parsed for Python syntax. `SHA256SUMS` and `provenance.json` record the four source checksums and their entry points.
+**Certified source integrity:** the four local source copies match their supplied originals byte for byte, and each file was parsed for Python syntax. GitHub blob hashes confirm that the published Python files match those originals after CRLF-to-LF line-ending normalization. No algorithm text was changed. The public repository contains only the four Python sources, this README, and `requirements.txt`.
 
 **Source inspection only:** dependencies were not installed, algorithms and demos were not executed, and no numerical or performance results were computed. This package does not establish theorem correctness, global optimality of the alternating solver, real-time operation, hardware deployment, or benchmark performance. The real-field constructions depend on numerical rank tolerances; the three-user constructions use bounded randomized search and may fail for a given input or configuration. Original comments that refer to paper theorems or optimality are preserved as supplied, without independent verification.
 
