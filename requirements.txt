@@ -1,0 +1,6 @@
+# Declared dependencies inferred from source imports; versions are unpinned.
+# This is not a tested or locked environment.
+numpy
+torch
+# Optional: required only when using the OTA solver's plotting function.
+matplotlib
