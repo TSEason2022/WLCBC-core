@@ -23,8 +23,12 @@ The OTA solver's command-line interface accepts `--device cpu` and `--no-plot`; 
 
 ## Scope and verification
 
-**Certified source integrity:** the four local source copies match their supplied originals byte for byte, and each file was parsed for Python syntax. GitHub blob hashes confirm that the published Python files match those originals after CRLF-to-LF line-ending normalization. No algorithm text was changed. The public repository contains only the four Python sources, this README, and `requirements.txt`.
+**Certified source integrity:** the four local source copies match their supplied originals byte for byte, and each file was parsed for Python syntax. GitHub blob hashes confirm that the published Python files match those originals after CRLF-to-LF line-ending normalization. No algorithm text was changed. The public repository contains the four Python sources, this README, `requirements.txt`, and the software license.
 
 **Source inspection only:** dependencies were not installed, algorithms and demos were not executed, and no numerical or performance results were computed. This package does not establish theorem correctness, global optimality of the alternating solver, real-time operation, hardware deployment, or benchmark performance. The real-field constructions depend on numerical rank tolerances; the three-user constructions use bounded randomized search and may fail for a given input or configuration. Original comments that refer to paper theorems or optimality are preserved as supplied, without independent verification.
 
-These are algorithm implementations and simulation building blocks for research prototypes. No RF hardware interface is included. No license was supplied in the selected source set, so this package does not add or infer a license.
+These are algorithm implementations and simulation building blocks for research prototypes. No RF hardware interface is included.
+
+## License
+
+The algorithm source code and its accompanying software documentation are available under the [MIT License](LICENSE), copyright (c) 2026 Shuo Tan. Existing author credits and construction attributions are preserved. This license does not apply to the cited research papers or third-party dependencies; their existing rights and licenses remain unchanged.
